@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            td {{ border: 1px solid #BBB; padding: 2px }}
+            table {{ margin-bottom: 10px; }}
+        </style>
+    </head>
+    <body>
+        <h1>Mailing list upload - Results</h1>
+
+        <p>Last uploaded <i>{last_updated}</i></p>
+        <ul>
+            <li><a href="out.csv">Mailing list</a></li>
+            <li><a href="salesforce.csv">Salesforce</a> <small>Import into Salesforce</small></li>
+        </ul>
+        <ul>
+            <li><a href="err.csv">Errors / Unsure</a></li>
+            <li><a href="differencesPO.{last_updated_date}.csv">Property Owners differences</a> <small>or see below</small></li>
+            <li><a href="differencesBL.{last_updated_date}.csv">Business Licenses differences</a> <small>or see below</small></li>
+        </ul>
+        <p><a href="index.html">Back</a></p>
+
+        <hr>
+        <h2>Property Owner Differences</h2>
+        {po_differences_html}
+
+        <hr>
+        <h2>Business License Differences</h2>
+        {bl_differences_html}
+
+    </body>
+</html>
