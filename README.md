@@ -11,6 +11,6 @@ Here is how it works:
 
 1. Index.html posts two .csv files in a specific format to webmerge.py
 2. Webmerge.py then does some data validation and error checking and shows differences from the last upload.
-3. Calls merge.py to merge the files, and return them to webmerge.py.
-4. Prints the results to file for uplading into Salesforce, and displays results in the browser
+3. Webmerge calls merge.py to merge the files, and return them to webmerge.py.
+4. Webmerge prints the results to file for uplading into Salesforce, and displays results in the browser
 
