@@ -1,4 +1,4 @@
 salesforce-upload
 =================
 
-Merge files for upload into Salesforce
+Merge files for upload into Salesforce with Python
