@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1>Mailing list upload</h1>
+        <form action="webmerge.py" method="post" enctype="multipart/form-data">
+            <ul>
+                <li>
+                    <label>
+                        Property Owners (as CSV): <input type="file" name="property_owners" />
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Business Licenses (as CSV): <input type="file" name="business_licenses" />
+                    </label>
+                </li>
+            </ul>
+            <p>
+                <input type="submit" value="Upload" />
+            </p>
+        </form>
+        <p>Please note: The exact format of the CSV files is very important. 
+        Some of the columns can be blank, but the column must be there.
+        <p>
+        <p>The <b>Property Owners</b> file should have the following 11 columns, in this order:
+            <ol>
+                <li>Folio</li>
+                <li>Civic</li>
+                <li>Name 1</li>
+                <li>Name 2</li>
+                <li>Mailing</li>
+                <li>Total Assess</li>
+                <li>Included Assess</li>
+                <li>Ann Chg</li>
+                <li>Unit</li>
+                <li>House</li>
+                <li>Street</li>
+            </ol>
+        </p>
+        <p>The <b>Business Licenses</b> file should have the following 15 columns, in this order:
+            <ol>
+                <li>RECORD</li>
+                <li>LICENSE NUMBER</li>
+                <li>ADDRESS</li>
+                <li>LICENSE TYPE</li>
+                <li>STATUS</li>
+                <li>LICENSE YEAR</li>
+                <li>BUSINESS NAME</li>
+                <li>BUSINESS TRADE NAME</li>
+                <li>DATA FROM</li>
+                <li>MAIL ADDRESS1</li>
+                <li>MAIL ADDRESS2</li>
+                <li>MAIL ADDRESS3</li>
+                <li>MAIL ADDRESS4</li>
+                <li>WORK PHONE1</li>
+                <li>WORK PHONE2</li>
+            </ol>
+        </p>
+
+    </body>
+</html>
